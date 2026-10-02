@@ -40,7 +40,7 @@ pipeline {
         stage('Validate Builder') {
             steps {
                 sh '''
-                    set -Eeuo pipefail
+                    set -eu
 
                     echo "Builder architecture:"
                     uname -m
